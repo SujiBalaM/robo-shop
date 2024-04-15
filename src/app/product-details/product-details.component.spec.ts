@@ -18,4 +18,16 @@ describe('ProductDetailsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should create', () => {
+    let product = {"id": 18,
+    "description": "An inexpensive three-wheeled base. only capable of slow speeds and can only function on smooth surfaces.",
+    "name": "Triple Wheeled Base",
+    "imageName": "base-triple-wheel.png",
+    "category": "Bases",
+    "price": 700.5,
+    "discount": 0}
+    const spy = spyOn(component,'getImageUrl')
+    expect(spy).toHaveBeenCalled();
+  });
 });
