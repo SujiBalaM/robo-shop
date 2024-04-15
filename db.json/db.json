@@ -353,5 +353,53 @@
     {
       "id": "4af1"
     }
+  ],
+  "sign-in": [
+    {
+      "firstName": "Sujatha",
+      "lastName": "Manoharan",
+      "email": "Sujathamanoharan7@gmail.com",
+      "password": "Secret"
+    },
+    {
+      "id": "d7dc",
+      "email": "Sujathamanoharan7@gmail.com",
+      "password": "Secret"
+    },
+    {
+      "id": "1d89",
+      "email": "vishnuharish12@gmail.com",
+      "password": "Hari123@"
+    },
+    {
+      "id": "a020",
+      "email": "foo",
+      "password": "111"
+    },
+    {
+      "id": "f359",
+      "email": "vishnuharish12@gmail.com",
+      "password": "Hari123@"
+    },
+    {
+      "id": "3ead",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "869c",
+      "email": "ssss",
+      "password": "sssss"
+    },
+    {
+      "id": "348e",
+      "email": "vishnuharish12@gmail.com",
+      "password": "Hari123@"
+    },
+    {
+      "id": "59f4",
+      "email": "a",
+      "password": "Hari123@"
+    }
   ]
 }
