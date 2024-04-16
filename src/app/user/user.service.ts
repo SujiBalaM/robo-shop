@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { IUser, IUserCredentials } from './user.model';
-import { BehaviorSubject, Observable, map } from 'rxjs';
+import { BehaviorSubject, Observable, Subject, map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -9,6 +9,7 @@ import { BehaviorSubject, Observable, map } from 'rxjs';
 export class UserService {
   private apiServer = "http://localhost:8000";
   private user: BehaviorSubject<IUser | null>;
+  public userLoggedIn = new Subject();;
   constructor(private http: HttpClient) {
     this.user = new BehaviorSubject<IUser | null>(null);
   }

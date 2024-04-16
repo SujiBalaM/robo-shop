@@ -352,6 +352,120 @@
     },
     {
       "id": "4af1"
+    },
+    {
+      "id": 13,
+      "description": "A simple torso with a pouch for carrying items.",
+      "name": "Pouch Torso",
+      "imageName": "torso-pouch.png",
+      "category": "Torsos",
+      "price": 785,
+      "discount": 0
+    },
+    {
+      "id": 6,
+      "description": "An articulated arm with a claw -- great for reaching around corners or working in tight spaces.",
+      "name": "Articulated Arm",
+      "imageName": "arm-articulated-claw.png",
+      "category": "Arms",
+      "price": 275,
+      "discount": 0
+    },
+    {
+      "id": 2,
+      "description": "A friendly robot head with two eyes and a smile -- great for domestic use.",
+      "name": "Friendly Bot",
+      "imageName": "head-friendly.png",
+      "category": "Heads",
+      "price": 945,
+      "discount": 0.2
+    },
+    {
+      "0": {
+        "id": 6,
+        "description": "An articulated arm with a claw -- great for reaching around corners or working in tight spaces.",
+        "name": "Articulated Arm",
+        "imageName": "arm-articulated-claw.png",
+        "category": "Arms",
+        "price": 275,
+        "discount": 0
+      },
+      "1": {
+        "id": 2,
+        "description": "A friendly robot head with two eyes and a smile -- great for domestic use.",
+        "name": "Friendly Bot",
+        "imageName": "head-friendly.png",
+        "category": "Heads",
+        "price": 945,
+        "discount": 0.2
+      },
+      "id": "27e4"
+    },
+    {
+      "id": 1,
+      "description": "A robot head with an unusually large eye and teloscpic neck -- excellent for exploring high spaces.",
+      "name": "Large Cyclops",
+      "imageName": "head-big-eye.png",
+      "category": "Heads",
+      "price": 1220.5,
+      "discount": 0.2
+    },
+    {
+      "id": 17,
+      "description": "A spring base - great for reaching high places.",
+      "name": "Spring Base",
+      "imageName": "base-spring.png",
+      "category": "Bases",
+      "price": 1190.5,
+      "discount": 0
+    },
+    {
+      "id": 1,
+      "description": "A robot head with an unusually large eye and teloscpic neck -- excellent for exploring high spaces.",
+      "name": "Large Cyclops",
+      "imageName": "head-big-eye.png",
+      "category": "Heads",
+      "price": 1220.5,
+      "discount": 0.2
+    },
+    {
+      "id": 6,
+      "description": "An articulated arm with a claw -- great for reaching around corners or working in tight spaces.",
+      "name": "Articulated Arm",
+      "imageName": "arm-articulated-claw.png",
+      "category": "Arms",
+      "price": 275,
+      "discount": 0
+    },
+    {
+      "id": 1,
+      "description": "A robot head with an unusually large eye and teloscpic neck -- excellent for exploring high spaces.",
+      "name": "Large Cyclops",
+      "imageName": "head-big-eye.png",
+      "category": "Heads",
+      "price": 1220.5,
+      "discount": 0.2
+    },
+    {
+      "0": {
+        "id": 1,
+        "description": "A robot head with an unusually large eye and teloscpic neck -- excellent for exploring high spaces.",
+        "name": "Large Cyclops",
+        "imageName": "head-big-eye.png",
+        "category": "Heads",
+        "price": 1220.5,
+        "discount": 0.2
+      },
+      "1": {
+        "id": 1,
+        "description": "A robot head with an unusually large eye and teloscpic neck -- excellent for exploring high spaces.",
+        "name": "Large Cyclops",
+        "imageName": "head-big-eye.png",
+        "category": "Heads",
+        "price": 1220.5,
+        "discount": 0.2
+      },
+      "id": "b472"
     }
   ],
   "sign-in": [
@@ -399,6 +513,36 @@
     {
       "id": "59f4",
       "email": "a",
+      "password": "Hari123@"
+    },
+    {
+      "id": "521a",
+      "email": "vishnuharish12@gmail.com",
+      "password": "Hari123@"
+    },
+    {
+      "id": "fabc",
+      "email": "vishnuharish12@gmail.com",
+      "password": "Hari123@"
+    },
+    {
+      "id": "38ca",
+      "email": "vishnuharish12@gmail.com",
+      "password": "Hari123@"
+    },
+    {
+      "id": "28f0",
+      "email": "vishnuharish12@gmail.com",
+      "password": "Hari123@"
+    },
+    {
+      "id": "fcfc",
+      "email": "vishnuharish12@gmail.com",
+      "password": "Hari123@"
+    },
+    {
+      "id": "b38e",
+      "email": "vishnuharish12@gmail.com",
       "password": "Hari123@"
     }
   ]

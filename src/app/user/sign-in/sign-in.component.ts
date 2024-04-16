@@ -16,7 +16,9 @@ constructor(private userService:UserService,private route:Router){}
 submitForm() {
   this.signInError = false;
   this.userService.signIn(this.credentials).subscribe({
-    next:() => this.route.navigate(['/catalog']),
+    next:() => {this.route.navigate(['/catalog'])
+    this.userService.userLoggedIn.next(true);
+  },
     error:() => this.signInError = true
   })
 }
