@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="left">
+    <div class="left" *ngIf="userLogged">
       <img class="logo" src="/assets/images/robot-parts/head-friendly.png" alt="Logo" />
       <a routerLink="/home" routerLinkActive="active">Home</a>
       <a routerLink="/catalog" routerLinkActive="active">Catalog</a>
