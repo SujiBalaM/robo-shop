@@ -7,7 +7,7 @@ import { BehaviorSubject, Observable, Subject, map } from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
-  private apiServer = "http://localhost:8000";
+  private apiServer = "http://localhost:3000";
   private user: BehaviorSubject<IUser | null>;
   public userLoggedIn = new Subject();;
   constructor(private http: HttpClient) {
@@ -17,12 +17,15 @@ export class UserService {
     return this.user;
   }
   signIn(credentials: IUserCredentials): Observable<IUser> {
-    return this.http.post<IUser>(this.apiServer + '/sign-in', credentials)
+    return this.http.post<IUser>(this.apiServer + '/auth/login', credentials)
       .pipe(map((user: IUser) => {
         this.user.next(user)
         return user;
       }
       ))
+  }
+  login():Observable<IUserCredentials>{
+    return this.http.get<IUserCredentials>(this.apiServer + '/auth/login');
   }
   signOut() {
     this.user.next(null)

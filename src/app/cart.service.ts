@@ -9,6 +9,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 export class CartService {
   cart:IProduct[] = [];
   private apiServer = "http://localhost:8000";
+  private nestServer = "http://localhost:3000"
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json'
@@ -18,10 +19,10 @@ export class CartService {
   constructor(private httpClient: HttpClient) { }
   private cartItem:BehaviorSubject<IProduct[]> = new BehaviorSubject<IProduct[]>([]); 
   getProducts():Observable<IProduct> {
-    return this.httpClient.get<IProduct>(this.apiServer+'/products');
+    return this.httpClient.get<IProduct>(this.nestServer+'/products');
   }
   getCart() {
-    this.httpClient.get<IProduct[]>(this.apiServer+'/cart').subscribe({
+    this.httpClient.get<IProduct[]>(this.nestServer+'/cart').subscribe({
       next:cart => this.cartItem.next(cart)
     })
   }
@@ -31,7 +32,7 @@ getCartItem(): Observable<IProduct[]> {
   addProduct(product:IProduct) {
     const newCart = [...this.cartItem.getValue(), product];
     this.cartItem.next(newCart);
-    this.httpClient.post(this.apiServer+'/cart',product).subscribe(res => {
+    this.httpClient.post(this.nestServer+'/cart',product).subscribe(res => {
       console.log(`Selected  ${product.name} added to cart`)
 
     })
@@ -41,7 +42,7 @@ getCartItem(): Observable<IProduct[]> {
   removeProduct(product:IProduct){
     const newCart = this.cartItem.getValue().filter((i) => i !== product);
     this.cartItem.next(newCart);
-    this.httpClient.post(this.apiServer+'/cart',newCart).subscribe(res => {
+    this.httpClient.post(this.nestServer+'/cart',newCart).subscribe(res => {
       console.log(`Selected  ${product.name} removed from cart`)
 
     })
