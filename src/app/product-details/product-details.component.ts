@@ -11,7 +11,7 @@ export class ProductDetailsComponent {
   @Output() buy = new EventEmitter();
 
   getImageUrl(product:IProduct) {
-    return './assets/images/robot-parts/' + product.imageName
+    return './assets/images/robot-parts/' + product.imageurl
   }
 
   buyButtonClicked(product:IProduct){

@@ -1,6 +1,6 @@
 <div class="container">
     <form #signInForm ="ngForm" class="form" (ngSubmit)="submitForm()">
-        <img class="logo" src="./assets/images/logo.png"/>
+        <!-- <img class="logo" src="./assets/images/logo.png"/> -->
         <div class="sign-in"> Sign In</div>
         <div class="sub-text">To Acquire Awesome bots</div>
         <input name="email" required email #email="ngModel" [(ngModel)]="credentials.email" placeholder="Email Address..." type="text" />

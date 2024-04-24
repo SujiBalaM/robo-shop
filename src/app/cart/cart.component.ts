@@ -20,11 +20,12 @@ export class CartComponent {
   }
 
   getImageUrl(product: IProduct) {
-    return './assets/images/robot-parts/' + product.imageName
+    return './assets/images/robot-parts/' + product.imageurl
   }
   get cartTotal() {
     return this.cart.reduce((prev, next) => {
       let discount = next.discount && next.discount > 0 ? 1 - next.discount : 1;
+      console.log(discount)
       return prev + next.price * discount;
 
     }, 0)
